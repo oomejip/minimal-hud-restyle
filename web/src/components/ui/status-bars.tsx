@@ -13,7 +13,7 @@ export const StatBar = ({
   Icon = TiHeartFullOutline,
   value = 20,
   maxValue = 100,
-  color = "#94f024",
+  color = "#F2F2F2",
   vertical = false,
   ...props
 }: StatBarProps) => {
@@ -26,7 +26,7 @@ export const StatBar = ({
       } items-center gap-1 4k:gap-2`}
       {...props}
     >
-      {!vertical && <Icon className="text-white/70 4k:text-2xl 2k:text-xl" />}
+      {!vertical && <Icon className="text-y_white 4k:text-2xl 2k:text-xl" />}
       {!vertical && (
         <p
           className="text-xs w-[20px] 4k:text-base 2k:text-sm text-center font-bold"
@@ -54,7 +54,7 @@ export const StatBar = ({
           }}
         />
       </div>
-      {vertical && <Icon className="text-white/70 4k:text-2xl 2k:text-xl" />}
+      {vertical && <Icon className="text-y_white 4k:text-2xl 2k:text-xl" />}
     </div>
   );
 };
@@ -68,7 +68,7 @@ interface StatBarSegmentedProps extends React.HTMLAttributes<HTMLDivElement> {
 export const StatBarSegmented = ({
   Icon = TiHeartFullOutline,
   value = 20,
-  color = "#94f024",
+  color = "#F2F2F2",
   ...props
 }: StatBarSegmentedProps) => {
   const segments = 4;
@@ -91,7 +91,7 @@ export const StatBarSegmented = ({
 
   return (
     <div className="flex items-center gap-1 w-full 4k:gap-2" {...props}>
-      <Icon className="text-white/70 4k:text-2xl 2k:text-xl" />
+      <Icon className="text-y_white 4k:text-2xl 2k:text-xl" />
       <p
         className="text-xs 2k:text-sm 4k:text-base w-[20px] text-center font-bold"
         style={{ color: color }}

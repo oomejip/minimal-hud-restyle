@@ -9,12 +9,12 @@ interface TextProgressBarProps extends React.HTMLAttributes<HTMLDivElement> {
 export const TextProgressBar = ({
   value = 50,
   label = "FUEL",
-  color = "#94f024",
+  color = "#06CE6B",
   ...props
 }: TextProgressBarProps) => {
   const getColor = useMemo(() => {
-    if (value <= 20) return "#f70101";
-    if (value <= 50) return "#f7e300";
+    if (value <= 20) return "#FE2436";
+    if (value <= 50) return "#FB8607";
     return color;
   }, [color, value]);
 
@@ -39,12 +39,7 @@ export const TextProgressBar = ({
         }
       >
         <div
-          className={`absolute max-w-full transition-all rounded-full shadow left-0 h-full z-20 ${value <= 20
-            ? "shadow-red-600"
-            : value <= 50
-              ? "shadow-yellow-500"
-              : "shadow-primary"
-            }`}
+          className="absolute max-w-full transition-all rounded-full shadow left-0 h-full z-20"
           style={{
             width: `${value}%`,
             backgroundColor: getColor,

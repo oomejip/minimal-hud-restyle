@@ -54,21 +54,25 @@ const PlayerStatus = () => {
             <StatBarSegmented
               Icon={BiSolidShieldAlt2}
               value={playerState.armor}
-              color="#10aef5"
+              color="#2B78FC"
             />
             <StatBar
               Icon={TiHeartFullOutline}
               value={playerState.health}
+              color="#06CE6B"
               maxValue={100}
             />
           </div>
           {isUsingFramework && (
             <>
-              <StatBar Icon={IoFastFood} value={playerState.hunger} vertical />
+              <StatBar Icon={IoFastFood}
+              value={playerState.hunger}
+              color="#FB8607"
+              vertical />
               <StatBar
                 Icon={FaBottleWater}
                 value={playerState.thirst}
-                color="#10aef5"
+                color="#2B78FC"
                 vertical
               />
               {typeof playerState.stress === "number" &&
@@ -76,7 +80,7 @@ const PlayerStatus = () => {
                   <StatBar
                     Icon={FaBrain}
                     value={playerState.stress}
-                    color="#ff5b57"
+                    color="#FE2436"
                     vertical
                   />
                 )}

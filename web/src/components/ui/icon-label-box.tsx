@@ -21,7 +21,7 @@ const IconLabelBox: React.FC<IconLabelBoxProps> = ({
   return (
     <div
       className={twMerge(
-        `flex items-center h-[3.2dvh] justify-center text-primary bg-black/50 rounded-[8px] p-[6px] min-w-[5dvw]`,
+        `flex items-center h-[3.2dvh] justify-center text-y_white bg-black/50 rounded-[8px] p-[6px] min-w-[5dvw]`,
         className
       )}
       {...props}
@@ -34,7 +34,7 @@ const IconLabelBox: React.FC<IconLabelBoxProps> = ({
       />
       <p
         className={twMerge(
-          `text-center text-white font-bold 4k:text-2xl text-sm 2k:text-base`,
+          `text-center text-y_white font-bold 4k:text-2xl text-sm 2k:text-base`,
           textClassName
         )}
         style={{
