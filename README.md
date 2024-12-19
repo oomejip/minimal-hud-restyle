@@ -1,11 +1,5 @@
-### #Ad
-
-#### [Justscripts.net](https://justscripts.net/products/6026186) Offers best fivem hud out there, justscripts providing unique hud for your server that can enchance your gameplay offers features such carhud, many incidicators and full customization!
-#### For an enhanced fivem hud, visit https://justscripts.net/products/6026186.
-<h1 align="center">
-  Minimal HUD
-  <br>
-</h1>
+![minimal-hud1](https://github.com/user-attachments/assets/535670e9-7d93-4c99-a3e2-26a8b81401c5)
+![minimal-hud2](https://github.com/user-attachments/assets/293fd5cd-d179-4ceb-86e8-0ddc12d00d2a)
 
 <h4 align="center">A minimal hud built for FiveM.</h4>
 
@@ -26,8 +20,6 @@
   <a href="#support">Support</a> •
   <a href="https://github.com/vipexv/minimal-hud/blob/main/LICENSE">License</a>
 </p>
-
-![minimal-hud-img](https://github.com/user-attachments/assets/242ae758-5841-4253-9c69-2f30032cdbee)
 
 ## How To Use
 
