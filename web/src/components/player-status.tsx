@@ -3,7 +3,7 @@ import { useMinimapState } from "@/states/minimap";
 import { PlayerStateInterface, usePlayerStateStore } from "@/states/player";
 import React, { useCallback, useMemo } from "preact/compat";
 import { BiSolidShieldAlt2 } from "react-icons/bi";
-import { FaBottleWater, FaBrain } from "react-icons/fa6";
+import { FaBottleWater, FaBrain , FaMicrophone } from "react-icons/fa6";
 import { IoFastFood } from "react-icons/io5";
 import { TiHeartFullOutline } from "react-icons/ti";
 import { StatBar, StatBarSegmented } from "./ui/status-bars";
@@ -65,6 +65,22 @@ const PlayerStatus = () => {
           </div>
           {isUsingFramework && (
             <>
+
+              {typeof playerState.mic === "boolean" && playerState.mic === true ? (
+                <StatBar
+                  Icon={FaMicrophone}
+                  value={playerState.mic ? 100 : 0}
+                  color="#FFFF00"
+                  vertical
+                />
+              ) : typeof playerState.voice === "number" ? (
+                <StatBar
+                  Icon={FaMicrophone}
+                  value={playerState.voice}
+                  color="#ffffff"
+                  vertical
+                />
+              ) : null}
               <StatBar Icon={IoFastFood}
               value={playerState.hunger}
               color="#FB8607"

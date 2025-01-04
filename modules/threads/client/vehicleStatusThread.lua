@@ -19,6 +19,18 @@ function VehicleStatusThread.new(playerStatus, seatbeltLogic)
 	return self
 end
 
+function GetNosLevel(veh)
+	local noslevelraw = getNosLevel(veh)
+	local noslevel
+
+	if noslevelraw == nil then
+		noslevel = 0
+	else
+		noslevel = math.floor(noslevelraw)
+	end
+	return noslevel
+end
+
 function VehicleStatusThread:start()
 	CreateThread(function()
 		local ped = PlayerPedId()
@@ -33,6 +45,7 @@ function VehicleStatusThread:start()
 			local engineHealth = convertEngineHealthToPercentage(GetVehicleEngineHealth(vehicle))
 			local speed = math.floor(GetEntitySpeed(vehicle) * 2.236936)
 			local rpm = convertRpmToPercentage(GetVehicleCurrentRpm(vehicle))
+			local noslevel = GetNosLevel(vehicle)
 			local fuelValue = math.max(0, math.min(functions.getVehicleFuel(vehicle), 100))
 			local engineState = GetIsVehicleEngineRunning(vehicle)
 			local fuel = math.floor(fuelValue)
@@ -45,9 +58,10 @@ function VehicleStatusThread:start()
 				engineState = engineState,
 				gears = gears,
 				fuel = fuel,
+				nos = noslevel,
 			})
 
-			Wait(120)
+			Wait(100)
 		end
 
 		if self.seatbelt then
