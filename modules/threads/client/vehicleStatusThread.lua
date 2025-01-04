@@ -20,15 +20,15 @@ function VehicleStatusThread.new(playerStatus, seatbeltLogic)
 end
 
 function GetNosLevel(veh)
-	local noslevelraw = functions.getNosLevel(veh)
-	local noslevel
+    local noslevelraw = functions.getNosLevel(veh)
+    local noslevel
 
-	if noslevelraw == nil then
-		noslevel = 0
-	else
-		noslevel = math.floor(noslevelraw)
-	end
-	return noslevel
+    if noslevelraw == nil then
+        noslevel = 0
+    else
+        noslevel = math.floor(noslevelraw)
+    end
+    return noslevel
 end
 
 function VehicleStatusThread:start()

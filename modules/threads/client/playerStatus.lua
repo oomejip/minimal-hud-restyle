@@ -1,5 +1,6 @@
 ---@diagnostic disable: cast-local-type
 local mapData = require("data.mapData")
+local serverId = GetPlayerServerId(PlayerId())
 local debug = require("modules.utils.shared").debug
 local interface = require("modules.interface.client")
 local config = require("config.shared")
@@ -24,6 +25,10 @@ function PlayerStatusThread.new(identifier)
 	return self
 end
 
+AddStateBagChangeHandler('stress', ('player:%s'):format(serverId), function(_, _, value)
+    stress = value
+end)
+
 function PlayerStatusThread:getIsVehicleThreadRunning()
 	return self.isVehicleThreadRunning
 end
@@ -38,7 +43,7 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 	CreateThread(function()
 		while true do
 			local ped = PlayerPedId()
-			local playerId = PlayerId()
+            local playerId = PlayerId()
             local talking = NetworkIsPlayerTalking(playerId)
             local voice = 0
 			local coords = GetEntityCoords(ped)
@@ -70,7 +75,7 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 				compass = "E"
 			end
 
-			if LocalPlayer.state['proximity'] then
+            if LocalPlayer.state['proximity'] then
                 if LocalPlayer.state['proximity'].mode == 'Whisper' then 
                     voice = 15
                 elseif LocalPlayer.state['proximity'].mode == 'Normal' then
@@ -90,8 +95,7 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 			local pedStress = framework and framework:getPlayerStress() or nil
 
 			local isInVehicle = IsPedInAnyVehicle(ped, false)
-			local isSeatbeltOn = config.useBuiltInSeatbeltLogic and seatbeltLogic.seatbeltState
-				or sharedFunctions.isSeatbeltOn()
+			local isSeatbeltOn = config.useBuiltInSeatbeltLogic and seatbeltLogic.seatbeltState or sharedFunctions.isSeatbeltOn()
 
 			if isInVehicle and not self:getIsVehicleThreadRunning() and vehicleStatusThread then
 				vehicleStatusThread:start()
@@ -115,7 +119,7 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 
 			interface.message("setPlayerState", data)
 
-			Wait(500)
+			Wait(300)
 		end
 	end)
 end

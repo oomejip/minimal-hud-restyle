@@ -21,13 +21,13 @@ const mockPlayerState: PlayerStateInterface = {
   hunger: 50,
   thirst: 100,
   stress: 0,
+  voice : 50,
   streetLabel: "Downtown Vinewood",
   areaLabel: "Vinewood Blvd",
   heading: "NW",
   isSeatbeltOn: false,
   isInVehicle: true,
   mic: true,
-  voice : 50,
 };
 
 const playerState = atom<PlayerStateInterface>(mockPlayerState);

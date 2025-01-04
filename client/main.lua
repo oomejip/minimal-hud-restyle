@@ -17,5 +17,6 @@ playerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 
 exports("toggleHud", function(state)
 	interface.toggle(state or nil)
+	DisplayRadar(state)
 	debug("(exports:toggleHud) Toggled HUD to state: ", state)
 end)
