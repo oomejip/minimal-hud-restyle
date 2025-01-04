@@ -6,6 +6,6 @@ return {
 		return GetVehicleFuelLevel(currentVehicle)
 	end,
 	getNosLevel = function(currentVehicle) -- Replace this with your own logic to grab the nos level of the vehicle.
-		return false
+		return 0
 	end,
 }
