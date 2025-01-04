@@ -40,10 +40,7 @@ $ bun install
 # Run the app
 $ bun run dev
 ```
-
-## Download
-
-You can [download](https://github.com/vipexv/minimal-hud/releases/latest) the latest installable version thats compiled.
+This fork of the original repository comes pre-built. If you wish to use it in your server, simply download, add to your resources, ensure in your `server.cfg`, and don't forget to set a framework in `config.shared.lua`.
 
 ## Credits
 
