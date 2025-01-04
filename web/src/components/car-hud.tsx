@@ -59,6 +59,7 @@ const CarHud = React.memo(function CarHud() {
         />
         <div className={"flex gap-2 items-center mr-2 4k:-mt-14"}>
           <TextProgressBar label="FUEL" value={vehicleState.fuel} />
+          <TextProgressBar label="NOS" value={vehicleState.nos} />
           <TextProgressBar
             label="ENG"
             value={vehicleState.engineState ? 100 : 0}
@@ -67,6 +68,7 @@ const CarHud = React.memo(function CarHud() {
             label="BELT"
             value={playerState.isSeatbeltOn ? 100 : 0}
           />
+          
         </div>
       </div>
     );

@@ -38,6 +38,9 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 	CreateThread(function()
 		while true do
 			local ped = PlayerPedId()
+			local playerId = PlayerId()
+            local talking = NetworkIsPlayerTalking(playerId)
+            local voice = 0
 			local coords = GetEntityCoords(ped)
 			local currentStreet, currentArea = GetStreetNameAtCoord(coords.x, coords.y, coords.z)
 
@@ -67,6 +70,18 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 				compass = "E"
 			end
 
+			if LocalPlayer.state['proximity'] then
+                if LocalPlayer.state['proximity'].mode == 'Whisper' then 
+                    voice = 15
+                elseif LocalPlayer.state['proximity'].mode == 'Normal' then
+                    voice = 50
+                elseif LocalPlayer.state['proximity'].mode == 'Shouting' then
+                    voice = 100
+                elseif voice == nil then
+                    voice = 0
+                end
+            end
+
 			local pedArmor = GetPedArmour(ped)
 			local pedHealthUnrestricted = math.floor(GetEntityHealth(ped) / GetEntityMaxHealth(ped) * 100)
 			local pedHealth = math.max(0, math.min(pedHealthUnrestricted, 100))
@@ -92,13 +107,15 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 				streetLabel = currentStreet,
 				areaLabel = zone,
 				heading = compass,
+                voice = voice,
+                mic = talking,
 				isSeatbeltOn = isSeatbeltOn,
 				isInVehicle = isInVehicle,
 			}
 
 			interface.message("setPlayerState", data)
 
-			Wait(1000)
+			Wait(500)
 		end
 	end)
 end
