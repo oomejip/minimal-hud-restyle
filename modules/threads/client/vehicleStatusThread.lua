@@ -20,7 +20,7 @@ function VehicleStatusThread.new(playerStatus, seatbeltLogic)
 end
 
 function GetNosLevel(veh)
-	local noslevelraw = getNosLevel(veh)
+	local noslevelraw = functions.getNosLevel(veh)
 	local noslevel
 
 	if noslevelraw == nil then
