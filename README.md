@@ -47,6 +47,10 @@ You can [download](https://github.com/vipexv/minimal-hud/releases/latest) the la
 
 ## Credits
 
+- Original author: [vipexv](https://github.com/vipexv)
+- UI Restyle: [MadCap](https://github.com/ThatMadCap)
+- NOS Bar and Mic Status: [Annalouu](https://github.com/Annalouu)
+
 This software uses the following open source packages:
 
 - [Node.js](https://nodejs.org/)
