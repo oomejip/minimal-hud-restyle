@@ -1,7 +1,4 @@
 ![image](https://github.com/user-attachments/assets/a1ec39be-fb3b-4d4b-b3f1-80c4830252ea)
-![image](https://github.com/user-attachments/assets/f700dd4a-b648-4eaa-a702-9e91cfbbfd94)
-
-
 
 <h4 align="center">A minimal hud built for FiveM.</h4>
 
