@@ -47,6 +47,7 @@ This fork of the original repository comes pre-built. If you wish to use it in y
 - Original author: [vipexv](https://github.com/vipexv)
 - UI Restyle: [MadCap](https://github.com/ThatMadCap)
 - NOS Bar and Mic Status: [Annalouu](https://github.com/Annalouu)
+- Speedometer Edit: [ItzMuri](https://github.com/ItzMuri)
 
 This software uses the following open source packages:
 
