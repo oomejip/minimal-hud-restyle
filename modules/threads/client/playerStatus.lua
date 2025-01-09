@@ -99,7 +99,10 @@ function PlayerStatusThread:start(vehicleStatusThread, seatbeltLogic, framework)
 
 			if isInVehicle and not self:getIsVehicleThreadRunning() and vehicleStatusThread then
 				vehicleStatusThread:start()
+				DisplayRadar(true)
 				debug("(playerStatus) (vehicleStatusThread) Vehicle status thread started.")
+			elseif not isInVehicle then
+				DisplayRadar(false)
 			end
 
 			local data = {
