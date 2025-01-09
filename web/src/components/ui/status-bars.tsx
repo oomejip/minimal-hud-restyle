@@ -71,7 +71,7 @@ export const StatBarSegmented = ({
   color = "#F2F2F2",
   ...props
 }: StatBarSegmentedProps) => {
-  const segments = 4;
+  const segments = 5;
   const segmentWidth = 100 / segments;
 
   const segmentFills = useMemo(

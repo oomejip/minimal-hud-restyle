@@ -16,8 +16,9 @@ import compass from "./components/compass";
 
 if (isEnvBrowser()) {
   const body = document.body;
-
-  body.style.backgroundColor = "#242424";
+  body!.style.backgroundImage = 'url("https://images.hdqwalls.com/download/dodge-charger-srt-hellcat-enforcer-n1-3840x2400.jpg")';
+  body!.style.backgroundSize = 'cover';
+  body!.style.backgroundRepeat = 'no-repeat';
   debug("App loaded in browser");
 }
 

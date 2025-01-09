@@ -11,7 +11,7 @@ interface SpeedometerProps {
 
 const Speedometer: React.FC<SpeedometerProps> = React.memo(
   function Speedometer({
-    speed = 42,
+    speed = 50,
     maxRpm = 100,
     rpm = 20,
     gears = 8,
@@ -105,10 +105,11 @@ const Speedometer: React.FC<SpeedometerProps> = React.memo(
           return (
             <g key={`gear-${i}`}>
               <path
-                d={createGearLine(0, 0, 34, 38, angle)}
+                d={createGearLine(0, 0, 36, 43, angle)}
                 stroke="#ffffff"
-                strokeWidth="0.7"
-                opacity="0.7"
+                strokeWidth="3"
+                opacity="100"
+                strokeLinecap="round" 
               />
             </g>
           );
