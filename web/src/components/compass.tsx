@@ -8,6 +8,9 @@ const Compass = () => {
   const playerState = usePlayerState();
   const compassLocation = useCompassLocation();
 
+  if (!playerState.isInVehicle) {
+    return null; 
+  }
   return (
     <div
       className={
