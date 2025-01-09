@@ -41,7 +41,7 @@ $ bun install
 # Run the app
 $ bun run dev
 ```
-This fork of the original repository comes pre-built. If you wish to use it in your server, simply download, add to your resources, ensure in your `server.cfg`, and don't forget to set a framework in `config.shared.lua`.
+This fork of the original repository comes pre-built. If you wish to use it in your server, simply download, add to your resources, ensure in your `server.cfg`. Don't forget to set a framework in `config/shared.lua` and any custom logic into `config/functions.lua`.
 
 ## Credits
 
