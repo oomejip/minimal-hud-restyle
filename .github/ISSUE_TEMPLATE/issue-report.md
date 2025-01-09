@@ -1,9 +1,9 @@
 ---
-Name: Issue Template
-About: Report an issue to help us improve
-Title: "[Issue]: Describe the issue briefly"
-Labels: issue
-Assignees: ThatMadCap
+name: Issue Template
+about: Report an issue to help us improve
+title: "[Issue]: Describe the issue briefly"
+labels: issue
+assignees: ThatMadCap
 ---
 
 ## 🐛 Issue Description
