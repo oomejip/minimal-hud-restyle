@@ -20,4 +20,9 @@ interface.toggle = function(shouldShow)
 	interface.message("setVisible", shouldShow)
 end
 
+RegisterNetEvent('hud:client:uiLoaded', function()
+    interface.toggle(false)
+    debug("(hud:client:uiLoaded) NUI frame is ready, HUD hidden initially.")
+end)
+
 return interface

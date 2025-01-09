@@ -20,3 +20,8 @@ exports("toggleHud", function(state)
 	DisplayRadar(state)
 	debug("(exports:toggleHud) Toggled HUD to state: ", state)
 end)
+
+RegisterNUICallback('uiLoaded', function(data, cb)
+    TriggerEvent('hud:client:uiLoaded')
+    cb('ok')
+end)
