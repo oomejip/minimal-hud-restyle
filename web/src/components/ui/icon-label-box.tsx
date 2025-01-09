@@ -21,7 +21,7 @@ const IconLabelBox: React.FC<IconLabelBoxProps> = ({
   return (
     <div
       className={twMerge(
-        `flex items-center h-[2.5dvh] justify-center text-y_white bg-[#06CE6B]/30 rounded-[8px] p-[1px] min-w-[5dvw]`,
+        `flex items-center h-[2.5dvh] justify-center text-y_white bg-black/30 rounded-[8px] p-[1px] min-w-[5dvw]`,
         className
       )}
       {...props}
