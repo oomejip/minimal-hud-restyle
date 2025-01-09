@@ -1,5 +1,6 @@
-![hud-1](https://github.com/user-attachments/assets/9a2786ac-4272-4b81-97e2-34ada270adf9)
-![hud-2](https://github.com/user-attachments/assets/bb21048a-7799-40e6-8b83-4a2373e6a6aa)
+![hud-1](https://github.com/user-attachments/assets/0b67e60e-0a28-431e-9159-e43479075925)
+![hud-2](https://github.com/user-attachments/assets/9ed4aee5-a32c-4b7e-acbf-ecf3476789bc)
+![hud-3](https://github.com/user-attachments/assets/6acc34ac-4906-41a0-8212-e32e2ef3633c)
 
 <h4 align="center">A minimal hud built for FiveM.</h4>
 
