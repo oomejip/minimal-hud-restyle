@@ -1,11 +1,14 @@
 <h1 align="center">
-  Minimal HUD
+  Minimal HUD Edit Color / KM/H
   <br>
 </h1>
 
-![hud-1](https://github.com/user-attachments/assets/0b67e60e-0a28-431e-9159-e43479075925)
-![hud-2](https://github.com/user-attachments/assets/9ed4aee5-a32c-4b7e-acbf-ecf3476789bc)
-![hud-3](https://github.com/user-attachments/assets/6acc34ac-4906-41a0-8212-e32e2ef3633c)
+![image](https://github.com/user-attachments/assets/53db887d-63fc-4bc7-8e4e-d5462b4bd26a)
+![image](https://github.com/user-attachments/assets/79498c90-8019-4218-8fc4-9708752f9b94)
+![image](https://github.com/user-attachments/assets/a5c5fcae-39b7-4e33-9391-70ff8685b281)
+
+
+
 
 <h4 align="center">A minimal hud built for FiveM.</h4>
 
