@@ -57,6 +57,17 @@ This software uses the following open source packages:
 - [Jotai](https://jotai.org/)
 - [Vite](https://vitejs.dev/)
 
+## Contributing
+
+I welcome contributions to improve minimal-hud, it would not be possible to maintain without the community. If you'd like to help enhance the resource, feel free to use discussions, open issues, or submit pull requests.  
+
+When contributing, please keep the following in mind:
+- Maintain the same style and theme as the existing HUD for a consistent user experience.
+- Follow the project's coding conventions.
+- Ensure any new features include appropriate tests where applicable.
+
+I appreciate your support in keeping this resource free and accessible for the FiveM community!
+
 ## Support
 
 If you enjoy this project and want to show your support, consider buying me a coffee:
