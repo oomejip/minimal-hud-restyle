@@ -1,6 +1,7 @@
 --@diagnostic disable: undefined-global
 fx_version("cerulean")
 game("gta5")
+this_is_a_map 'yes'
 
 name("minimal-hud")
 author("vipex <discord:vipex.v>")

@@ -1,15 +1,11 @@
 <h1 align="center">
-  Minimal HUD Edit Color / KM/H
+  Minimal HUD
   <br>
 </h1>
 
-![image](https://github.com/user-attachments/assets/53db887d-63fc-4bc7-8e4e-d5462b4bd26a)
-![image](https://github.com/user-attachments/assets/79498c90-8019-4218-8fc4-9708752f9b94)
-![image](https://github.com/user-attachments/assets/7f7b3f8f-63da-4d52-afd3-bb66879547cd)
-
-
-
-
+![hud-1](https://github.com/user-attachments/assets/0b67e60e-0a28-431e-9159-e43479075925)
+![hud-2](https://github.com/user-attachments/assets/9ed4aee5-a32c-4b7e-acbf-ecf3476789bc)
+![hud-3](https://github.com/user-attachments/assets/6acc34ac-4906-41a0-8212-e32e2ef3633c)
 
 <h4 align="center">A minimal hud built for FiveM.</h4>
 
@@ -60,17 +56,6 @@ This software uses the following open source packages:
 - [react-icons](https://react-icons.github.io/react-icons/)
 - [Jotai](https://jotai.org/)
 - [Vite](https://vitejs.dev/)
-
-## Contributing
-
-I welcome contributions to improve minimal-hud, it would not be possible to maintain without the community. If you'd like to help enhance the resource, feel free to use discussions, open issues, or submit pull requests.  
-
-When contributing, please keep the following in mind:
-- Maintain the same style and theme as the existing HUD for a consistent user experience.
-- Follow the project's coding conventions.
-- Ensure any new features include appropriate tests where applicable.
-
-I appreciate your support in keeping this resource free and accessible for the FiveM community!
 
 ## Support
 

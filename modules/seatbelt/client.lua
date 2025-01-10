@@ -12,8 +12,8 @@ function SeatbeltLogic.new()
 
 	local self = setmetatable({}, SeatbeltLogic)
 	self.seatbeltState = false
-	self.ejectVelocity = (1 / 2.236936)
-	self.unknownEjectVelocity = (2 / 2.236936)
+	self.ejectVelocity = (1 / 3.6)
+	self.unknownEjectVelocity = (2 / 3.6)
 	self.unknownModifier = 17.0
 	self.minDamage = 0.0
 
@@ -31,7 +31,7 @@ function SeatbeltLogic.new()
 
 	SetFlyThroughWindscreenParams(self.ejectVelocity, self.unknownEjectVelocity, self.unknownModifier, self.minDamage)
 	SetPedConfigFlag(PlayerPedId(), 32, true)
-	RegisterKeyMapping("toggleSeatbelt", "Toggle Seatbelt", "keyboard", "B")
+	RegisterKeyMapping("toggleSeatbelt", "Toggle Seatbelt", "keyboard", "G")
 
 	return self
 end

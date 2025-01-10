@@ -43,7 +43,7 @@ function VehicleStatusThread:start()
 		while IsPedInAnyVehicle(ped, false) do
 			local vehicle = GetVehiclePedIsIn(ped, false)
 			local engineHealth = convertEngineHealthToPercentage(GetVehicleEngineHealth(vehicle))
-			local speed = math.floor(GetEntitySpeed(vehicle) * 2.236936)
+			local speed = math.floor(GetEntitySpeed(vehicle) * 3.6)
 			local rpm = convertRpmToPercentage(GetVehicleCurrentRpm(vehicle))
 			local noslevel = GetNosLevel(vehicle)
 			local fuelValue = math.max(0, math.min(functions.getVehicleFuel(vehicle), 100))

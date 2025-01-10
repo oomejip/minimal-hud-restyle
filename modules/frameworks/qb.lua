@@ -1,9 +1,11 @@
 local debug = require("modules.utils.shared").debug
 
 local qb = exports["qb-core"]:GetCoreObject()
+local interface = require("modules.interface.client")
 
 local qbFramework = {}
 qbFramework.__index = qbFramework
+
 
 function qbFramework.new()
 	debug("(qbFramework:new) Created new instance.")
